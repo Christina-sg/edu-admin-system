@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  教务管理系统 —— 基础骨架（框架中立）
+
+  当前刻意【不绑定】任何 Web 框架：技术栈为「暂定」，等 master 确认后再加依赖。
+  可选路线见 README.md「技术选型（待确认）」一节，确定后在此 <dependencies> 内添加。
+
+  已确定的：
+    - Java 21 (LTS)
+    - Maven 3.9.x
+    - UTF-8 编码
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eduadmin</groupId>
+    <artifactId>edu-admin-system</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>edu-admin-system</name>
+    <description>教务管理系统</description>
+
+    <properties>
+        <maven.compiler.release>21</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <!--
+          框架依赖待定。确定技术路线后在此加入，例如：
+
+          路线 A — Spring Boot 3（推荐，现代主流）
+            <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+            <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            </dependency>
+
+          路线 B — SSM（Spring + SpringMVC + MyBatis，传统教学栈）
+          路线 C — Servlet + JSP（最基础，Tomcat 部署 war）
+
+          另需数据库驱动（MySQL / PostgreSQL / H2）与连接池，届时一并加入。
+        -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

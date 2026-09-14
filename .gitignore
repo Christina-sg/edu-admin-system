@@ -1,0 +1,36 @@
+# 编译产物
+target/
+*.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.settings/
+.classpath
+.project
+
+# 日志与临时文件
+*.log
+logs/
+*.tmp
+*.swp
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 数据库本地文件（如用 H2/SQLite 做开发）
+*.db
+*.sqlite
+*.mv.db
+*.trace.db
